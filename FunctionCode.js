@@ -1,3 +1,5 @@
+// Functions
+
 const sum = function(num1 , num2) {
     return num1 + num2;
 }; // done
@@ -26,7 +28,6 @@ const findFactorial = function(num){
 
 
 const round = function(number) {
-        
         return Math.round(number);
 };  // done
 
@@ -37,12 +38,12 @@ const toThePowerOf = function (base, exponent) {
 }; // done
 
 const randomNumber = function () {
-       return Math.random();
+       return Math.random(); // between 0 and 1 means ( n <= 0)
 }; // done
 
 
 const oneOrZero = function () {
-    return Math.floor(Math.random() * 2);
+    return Math.floor(Math.random() * 2); // return either the number zero or one.
 }; // done
 
 
@@ -50,7 +51,7 @@ const oneOrZero = function () {
 const randomRange = function(number) {
     if(number > 0 ) {
         }
-        return Math.floor(Math.random() * number);
+        return Math.floor(Math.random() * number); // random positive number (n >= 0 )
 }; // done
 
 
@@ -61,7 +62,7 @@ const includeOf = function(string, character) {
 
 
 
-
+// Arrays
 
 const addToArray = function (array, string) {
     let add = array.push(string);
@@ -76,7 +77,7 @@ const convertToString = function (array) {
 }; // done
 
 
-const updateValue = function (array, value, index) {
+const updateValue = function (array, index, value) { // ترتيبهم مهم 
     
     if (array.length <= index) { // Larger
         return "there is no element to updated in this index";
@@ -120,20 +121,3 @@ const reversString = function (string) {
     return string.split("").reverse().join("");
 
 }; //done
-
-
-
-// extra 
-
-
-const allUsers = [
-    { username: "Jane", password: "123456" },
-    { username: "admin", password: "abc123" },
-  ];
-  
-  const createUser = function (username, password) {
-    if(username == users[0][0] && password == users[0][1])
-    {
-       console.log("That username is not available");
-    } 
-  };
